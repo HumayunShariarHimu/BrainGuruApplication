@@ -1,0 +1,44 @@
+:root {
+  /* violet */
+  --primary-color: 111, 76, 255;
+
+  /* white */
+  --text-color: 256, 256, 256;
+}
+
+body {
+  padding: 1rem;
+  text-align: center;
+}
+.btn {
+  font-size: 18px;
+  padding: 12px 32px;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+.btn-primary {
+  background-color: rgb(var(--primary-color));
+  border: 1px solid rgb(var(--primary-color));
+  color: rgb(var(--text-color));
+}
+.btn-semi-transparent {
+  background-color: rgba(var(--primary-color), 0.15);
+  border: 1px solid rgba(var(--primary-color), 0.25);
+  color: rgba(var(--text-color), 0.8);
+}
+.btn-gradient {
+  background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+  border: 0;
+  color: rgba(var(--text-color));
+}
+.btn-gradient-border {
+  color: rgba(var(--text-color));
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)),
+    radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
