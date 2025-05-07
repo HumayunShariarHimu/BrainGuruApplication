@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+  color: #00ffe7;
+}
+.section {
+  padding: 1rem;
+}
+.contact {
+  display: flex;
+}
+.section__title {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.section_subtitle {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.social-media a {
+  border: 2px solid white;
+  width: 55px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+}
+.social-media a i {
+  font-size: 2.5rem;
+  transition: 0.3s;
+}
+.social-media a:hover i {
+	width: 50px;
+  height: 45px;
+  border-radius: 55%;
+  background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  outline-color: #a02d76;
+}
