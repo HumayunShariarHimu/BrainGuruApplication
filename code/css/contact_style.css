@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: black;
+  color: #00ffe7;
+}
+.section {
+  padding: 1rem;
+}
+.contact {
+  display: flex;
+}
+.section__title {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.section_subtitle {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.social-media a {
+  color: white;
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+}
+.social-media a i {
+  font-size: 2rem;
+  transition: 0.3s;
+}
+.social-media a:hover i {
+   color: #00ffe7;
+}

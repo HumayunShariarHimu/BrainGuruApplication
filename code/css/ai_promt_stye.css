@@ -1,0 +1,157 @@
+:root {
+  /* violet */
+  --primary-color: 111, 76, 255;
+  /* white */
+  --text-color: 256, 256, 256;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+	height: 100%;
+	font-family: Georgia, Bangla;
+	font-size: 20px;
+    font-weight: 10;
+    color: #00ffe7;
+	background-color:black;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@font-face {
+    font-family: "Bangla";
+    src: url("./bangla.ttf");
+}
+h3 {
+ 	font-family: "Times New Roman", Times, serif;
+ }
+.btn {
+  font-size: 18px;
+  padding: 12px 32px;
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+.btn-primary {
+  background-color: rgb(var(--primary-color));
+  border: 1px solid rgb(var(--primary-color));
+  color: rgb(var(--text-color));
+}
+.btn-semi-transparent {
+  background-color: rgba(var(--primary-color), 0.15);
+  border: 1px solid rgba(var(--primary-color), 0.25);
+  color: rgba(var(--text-color), 0.8);
+}
+.btn-gradient {
+  background-image: linear-gradient(to right, rgb(1 134 218), rgb(182 49 167));
+  border: 0;
+  color: rgba(var(--text-color));
+}
+.btn-gradient-border {
+  color: rgba(var(--text-color));
+  border: 2px double transparent;
+  background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)),
+    radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.rainbow-text {
+  background-image: linear-gradient(-90deg, #ff0000, rgb(166,246,86), rgb(85,246,246), rgb(166, 85, 246), rgb(246,85,85));
+  background-size: 200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 2.5s linear infinite;
+  font-size: 20px;
+  padding: 5px;
+  animation-direction: reverse;
+}
+.copy-container {
+      background: black;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 20px 25px;
+      max-width: 400px;
+      width: 90%;
+      position: relative;
+    }
+.text-box {
+  position: relative;
+  font-size: 16px;
+  color: rgb(230, 240, 255);
+  line-height: 1.6;
+  user-select: text;
+  padding: 20px;
+  padding-top: 50px;
+  border-radius: 10px;
+  background-color: #000;
+  animation: rainbow-glow 5s linear infinite;
+  box-shadow: 0 0 15px red;
+}
+@keyframes rainbow-glow {
+  0% {
+    box-shadow: 0 0 10px red;
+  }
+  14% {
+    box-shadow: 0 0 10px orange;
+  }
+  28% {
+    box-shadow: 0 0 10px yellow;
+  }
+  42% {
+    box-shadow: 0 0 10px green;
+  }
+  57% {
+    box-shadow: 0 0 10px cyan;
+  }
+  71% {
+    box-shadow: 0 0 10px blue;
+  }
+  85% {
+    box-shadow: 0 0 10px violet;
+  }
+  100% {
+    box-shadow: 0 0 10px red;
+  }
+}
+.copy-btn {
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #8B00FF;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+.copy-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.copy-btn svg {
+      width: 22px;
+      height: 22px;
+      stroke: white;
+      transition: stroke 0.3s ease;
+    }
+.copy-btn:hover svg {
+      stroke: #8B00FF;
+    }
+.copied-message {
+      color: #8B00FF;
+      font-size: 13px;
+      margin-top: 10px;
+      display: none;
+    }

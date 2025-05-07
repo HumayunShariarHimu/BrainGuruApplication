@@ -1,0 +1,500 @@
+body {
+  position: fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Times New Roman", Times, serif;
+}
+.container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+}
+h1.main,
+p.demos {
+  -webkit-animation-delay: 18s;
+  -moz-animation-delay: 18s;
+  -ms-animation-delay: 18s;
+  animation-delay: 18s;
+}
+
+.sp-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: -webkit-radial-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3) 35%,
+    rgba(0, 0, 0, 0.7)
+  );
+  background: -moz-radial-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3) 35%,
+    rgba(0, 0, 0, 0.7)
+  );
+  background: -ms-radial-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3) 35%,
+    rgba(0, 0, 0, 0.7)
+  );
+  background: radial-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.3) 35%,
+    rgba(0, 0, 0, 0.7)
+  );
+}
+.sp-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
+}
+.sp-container h2 {
+  position: absolute;
+  top: 50%;
+  line-height: 100px;
+  height: 90px;
+  margin-top: -50px;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  color: transparent;
+  -webkit-animation: blurFadeInOut 3s ease-in backwards;
+  -moz-animation: blurFadeInOut 3s ease-in backwards;
+  -ms-animation: blurFadeInOut 3s ease-in backwards;
+  animation: blurFadeInOut 3s ease-in backwards;
+}
+.sp-container h2.frame-1 {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.sp-container h2.frame-2 {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.sp-container h2.frame-3 {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.sp-container h2.frame-4 {
+  font-size: 200px;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.sp-container h2.frame-5 {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  animation: none;
+  color: transparent;
+  text-shadow: 0px 0px 1px #fff;
+}
+.sp-container h2.frame-5 span {
+  -webkit-animation: blurFadeIn 3s ease-in 4s backwards;
+  -moz-animation: blurFadeIn 1s ease-in 3s backwards;
+  -ms-animation: blurFadeIn 3s ease-in 5s backwards;
+  animation: blurFadeIn 3s ease-in 5s backwards;
+  color: transparent;
+  text-shadow: 0px 0px 1px #fff;
+}
+.sp-container h2.frame-5 span:nth-child(2) {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+}
+.sp-container h2.frame-5 span:nth-child(3) {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.arrow {
+  display: block;
+  position: fixed;
+  bottom: 5px;
+  right: 14px;
+  cursor: pointer;
+  z-index: 99999;
+}
+.arrow img {
+  width: 5rem;
+}
+
+@-moz-keyframes blurFadeInOut {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    -moz-transform: scale(1.3);
+  }
+  20%,
+  75% {
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -moz-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0px 0px 50px #fff;
+    -moz-transform: scale(0);
+  }
+}
+@-moz-keyframes blurFadeIn {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    -moz-transform: scale(1.3);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -moz-transform: scale(1);
+  }
+}
+@-moz-keyframes fadeInBack {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0);
+  }
+  50% {
+    opacity: 0.4;
+    -moz-transform: scale(2);
+  }
+  100% {
+    opacity: 0.2;
+    -moz-transform: scale(5);
+  }
+}
+@-moz-keyframes fadeInRotate {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes blurFadeInOut {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    transform: scale(1.3);
+  }
+  20%,
+  75% {
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0px 0px 50px #fff;
+    transform: scale(0);
+  }
+}
+@keyframes blurFadeIn {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    transform: scale(1.3);
+  }
+  50% {
+    opacity: 0.5;
+    text-shadow: 0px 0px 10px #fff;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    transform: scale(1);
+  }
+}
+@keyframes fadeInBack {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 0.2;
+    transform: scale(5);
+  }
+}
+@keyframes fadeInRotate {
+  0% {
+    opacity: 0;
+    transform: scale(0) rotate(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+html {
+  font: 5vmin/1.3 Serif;
+  overflow: hidden;
+  background: #123;
+}
+body,
+head {
+  display: block;
+  font-size: 52px;
+  color: transparent;
+}
+head::before,
+head::after,
+body::before,
+body::after {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  content: ".";
+  mix-blend-mode: screen;
+  animation: 44s -27s move infinite ease-in-out alternate;
+}
+body::before {
+  text-shadow: 1.2780953023em 2.0625073721em 7px rgba(255, 0, 96, 0.9),
+    1.9581021881em 2.3234004289em 7px rgba(0, 156, 255, 0.9),
+    0.9684805086em 2.0038028552em 7px rgba(255, 207, 0, 0.9),
+    1.0521805705em -0.0502395027em 7px rgba(8, 255, 0, 0.9),
+    1.7404988259em 0.920272083em 7px rgba(0, 255, 73, 0.9),
+    1.4784694992em -0.1627054808em 7px rgba(10, 255, 0, 0.9),
+    2.0588204561em 0.4459288771em 7px rgba(0, 255, 144, 0.9),
+    1.2781217094em 1.9998907517em 7px rgba(242, 255, 0, 0.9),
+    1.0853001459em 0.2310706087em 7px rgba(255, 0, 97, 0.9),
+    -0.1689761531em 1.1366943179em 7px rgba(255, 252, 0, 0.9),
+    1.7654686135em 0.8242962134em 7px rgba(0, 255, 43, 0.9),
+    0.055945043em 1.1899143063em 7px rgba(255, 219, 0, 0.9),
+    1.8984250317em 0.7393044855em 7px rgba(0, 233, 255, 0.9),
+    0.1452099793em 0.9015113458em 7px rgba(0, 255, 114, 0.9),
+    0.939167641em 1.8041619671em 7px rgba(255, 0, 226, 0.9),
+    -0.0830469468em 2.1734028275em 7px rgba(0, 255, 29, 0.9),
+    -0.1535831788em 1.0952948848em 7px rgba(0, 255, 139, 0.9),
+    0.878331268em 2.0074716092em 7px rgba(255, 0, 15, 0.9),
+    1.2380244985em 1.9956459074em 7px rgba(0, 255, 146, 0.9),
+    0.8549417704em -0.0884489157em 7px rgba(0, 14, 255, 0.9),
+    1.9756153862em 1.5877041049em 7px rgba(0, 129, 255, 0.9),
+    0.8664332605em 0.8075899679em 7px rgba(253, 0, 255, 0.9),
+    0.292034497em 0.8391292908em 7px rgba(0, 255, 129, 0.9),
+    2.3252207922em 0.6829864966em 7px rgba(0, 255, 148, 0.9),
+    1.7894820406em 2.3130251282em 7px rgba(6, 255, 0, 0.9),
+    1.0435745081em -0.3479080715em 7px rgba(30, 0, 255, 0.9),
+    0.5823657504em 2.1729729504em 7px rgba(203, 0, 255, 0.9),
+    0.8107055231em 0.1296741687em 7px rgba(0, 73, 255, 0.9),
+    2.0057691904em 0.4019339186em 7px rgba(0, 113, 255, 0.9),
+    2.0449442897em -0.3426990751em 7px rgba(0, 255, 127, 0.9),
+    0.1062526688em 2.0239094092em 7px rgba(0, 255, 246, 0.9),
+    1.8456770345em -0.0518173346em 7px rgba(255, 0, 123, 0.9),
+    1.1170466905em 1.7321679101em 7px rgba(0, 255, 21, 0.9),
+    1.6396250651em 0.5049903631em 7px rgba(234, 255, 0, 0.9),
+    0.6755235637em 1.1896707485em 7px rgba(0, 255, 227, 0.9),
+    0.9948081667em -0.0181242779em 7px rgba(0, 154, 255, 0.9),
+    -0.2895185984em 0.5684346625em 7px rgba(30, 255, 0, 0.9),
+    0.9905816749em 0.4278885279em 7px rgba(0, 51, 255, 0.9),
+    2.0319463758em 2.3599302369em 7px rgba(255, 0, 137, 0.9),
+    -0.1621289228em 2.4667956954em 7px rgba(255, 220, 0, 0.9),
+    1.5609902604em 0.9041564418em 7px rgba(255, 0, 128, 0.9);
+  animation-duration: 44s;
+  animation-delay: -27s;
+}
+body::after {
+  text-shadow: 1.3053644777em 1.5898283616em 7px rgba(0, 255, 189, 0.9),
+    1.3174213287em 1.5491809563em 7px rgba(23, 0, 255, 0.9),
+    1.3991293795em 2.4026243628em 7px rgba(5, 255, 0, 0.9),
+    0.8927133676em 0.4131671553em 7px rgba(170, 255, 0, 0.9),
+    -0.1769038085em 1.4758584068em 7px rgba(255, 0, 159, 0.9),
+    0.1305492411em 0.3097480242em 7px rgba(55, 0, 255, 0.9),
+    0.5465155911em 0.7751835079em 7px rgba(8, 255, 0, 0.9),
+    -0.3357260732em 1.4811879241em 7px rgba(30, 0, 255, 0.9),
+    0.0493368473em -0.3104759808em 7px rgba(167, 0, 255, 0.9),
+    2.0601542177em 0.4020148443em 7px rgba(0, 137, 255, 0.9),
+    0.3749122531em 2.1392484181em 7px rgba(255, 7, 0, 0.9),
+    0.3948645617em 1.7589491199em 7px rgba(66, 255, 0, 0.9),
+    1.3587236685em 0.1777162287em 7px rgba(0, 84, 255, 0.9),
+    0.2922919638em 1.6489641932em 7px rgba(0, 154, 255, 0.9),
+    1.5502750407em 2.003449769em 7px rgba(0, 255, 163, 0.9),
+    0.1230498181em 1.2181025173em 7px rgba(0, 255, 148, 0.9),
+    1.0196600517em 1.2571510594em 7px rgba(255, 180, 0, 0.9),
+    2.1271512822em 0.8703904899em 7px rgba(255, 0, 169, 0.9),
+    -0.1352082969em 0.3736779849em 7px rgba(16, 255, 0, 0.9),
+    0.5498985969em 1.2795747327em 7px rgba(255, 198, 0, 0.9),
+    2.2427169188em 1.2642889138em 7px rgba(161, 0, 255, 0.9),
+    -0.4009537612em 0.7057086234em 7px rgba(255, 0, 56, 0.9),
+    1.0003025762em 0.9562499674em 7px rgba(220, 0, 255, 0.9),
+    1.7894082448em -0.4559727684em 7px rgba(227, 0, 255, 0.9),
+    1.4725084834em 1.7564876273em 7px rgba(0, 255, 70, 0.9),
+    2.0343193325em 2.4490477781em 7px rgba(0, 253, 255, 0.9),
+    -0.0941777173em 1.0013103972em 7px rgba(0, 255, 86, 0.9),
+    0.7971179077em -0.1166943864em 7px rgba(39, 255, 0, 0.9),
+    1.0460073691em 0.7454839899em 7px rgba(255, 74, 0, 0.9),
+    1.487353019em 1.4980683542em 7px rgba(255, 0, 200, 0.9),
+    1.1155002077em -0.1801496862em 7px rgba(0, 255, 255, 0.9),
+    1.1966667015em 1.3696051506em 7px rgba(0, 255, 68, 0.9),
+    1.6734888343em 1.170193794em 7px rgba(161, 255, 0, 0.9),
+    0.5182634176em -0.1708924389em 7px rgba(0, 255, 152, 0.9),
+    1.8676151233em 2.195412729em 7px rgba(0, 255, 82, 0.9),
+    1.3536621711em -0.4593430781em 7px rgba(255, 27, 0, 0.9),
+    1.4718083213em -0.1518554592em 7px rgba(189, 255, 0, 0.9),
+    0.002564792em 1.3673440815em 7px rgba(0, 255, 54, 0.9),
+    1.4332123034em 2.3762371763em 7px rgba(0, 51, 255, 0.9),
+    -0.0683061655em 1.9848854509em 7px rgba(0, 70, 255, 0.9),
+    0.83488866em 0.5189095949em 7px rgba(255, 0, 98, 0.9);
+  animation-duration: 43s;
+  animation-delay: -32s;
+}
+head::before {
+  text-shadow: -0.4043470965em 0.6605979324em 7px rgba(138, 0, 255, 0.9),
+    1.2138479434em 2.1018713306em 7px rgba(255, 0, 67, 0.9),
+    1.6068875543em 2.0709447661em 7px rgba(51, 255, 0, 0.9),
+    2.0648499611em 1.0416225501em 7px rgba(0, 239, 255, 0.9),
+    0.9489627405em 1.5489574705em 7px rgba(0, 100, 255, 0.9),
+    -0.2433590402em -0.2563250312em 7px rgba(0, 218, 255, 0.9),
+    2.1112314337em 1.4549401974em 7px rgba(0, 163, 255, 0.9),
+    -0.0457160257em 2.3946744333em 7px rgba(0, 137, 255, 0.9),
+    2.4766571299em 1.1549976625em 7px rgba(255, 0, 167, 0.9),
+    2.2788009101em 0.8518378107em 7px rgba(8, 0, 255, 0.9),
+    0.3150995781em 0.7947539687em 7px rgba(255, 0, 207, 0.9),
+    0.8683918576em 1.0187513757em 7px rgba(0, 255, 196, 0.9),
+    0.1333363377em 2.0149874407em 7px rgba(0, 185, 255, 0.9),
+    -0.3832440383em 0.9991166559em 7px rgba(191, 0, 255, 0.9),
+    0.2760581848em 0.2182243027em 7px rgba(255, 109, 0, 0.9),
+    0.0794698425em 1.7618374409em 7px rgba(185, 255, 0, 0.9),
+    0.7057908423em 2.3215868329em 7px rgba(119, 255, 0, 0.9),
+    1.5041909591em 1.5031764217em 7px rgba(0, 255, 159, 0.9),
+    -0.1810353274em 0.8664731984em 7px rgba(0, 102, 255, 0.9),
+    1.0321466099em 0.9276720475em 7px rgba(255, 38, 0, 0.9),
+    -0.2523801028em 2.2804114793em 7px rgba(0, 108, 255, 0.9),
+    1.854742672em 1.6311119425em 7px rgba(107, 0, 255, 0.9),
+    1.2878788362em 0.7734821859em 7px rgba(255, 121, 0, 0.9),
+    0.8065111972em 1.8238897581em 7px rgba(43, 0, 255, 0.9),
+    1.8845541733em 0.8800080039em 7px rgba(71, 255, 0, 0.9),
+    2.0660131811em 0.4038636219em 7px rgba(0, 255, 9, 0.9),
+    1.269407708em 1.0306141114em 7px rgba(253, 255, 0, 0.9),
+    1.2017905311em 2.2735394257em 7px rgba(0, 255, 145, 0.9),
+    1.6871974109em 2.4113788073em 7px rgba(255, 84, 0, 0.9),
+    0.5993672623em 0.763556201em 7px rgba(255, 201, 0, 0.9),
+    1.9535276673em -0.3312100191em 7px rgba(255, 0, 193, 0.9),
+    1.3947068832em -0.2532609398em 7px rgba(255, 181, 0, 0.9),
+    0.7403758954em 1.8942340355em 7px rgba(86, 0, 255, 0.9),
+    2.4859153791em 1.7830442856em 7px rgba(255, 192, 0, 0.9),
+    0.3463287358em 0.4287181451em 7px rgba(0, 255, 1, 0.9),
+    0.5098678936em 0.5642895758em 7px rgba(108, 255, 0, 0.9),
+    0.9716545555em 1.6386034016em 7px rgba(255, 0, 148, 0.9),
+    0.7114737791em 1.8193988581em 7px rgba(89, 255, 0, 0.9),
+    -0.3551776784em 0.4660265786em 7px rgba(0, 183, 255, 0.9),
+    0.8092286686em 2.0057093666em 7px rgba(255, 0, 90, 0.9),
+    1.8454497789em 0.2408264984em 7px rgba(0, 255, 27, 0.9);
+  animation-duration: 42s;
+  animation-delay: -23s;
+}
+head::after {
+  text-shadow: 1.2121028395em 2.4201142805em 7px rgba(255, 0, 79, 0.9),
+    0.2855708427em 0.764818854em 7px rgba(137, 255, 0, 0.9),
+    0.6859545196em 0.0991705922em 7px rgba(36, 255, 0, 0.9),
+    2.3572083334em -0.1539172069em 7px rgba(204, 0, 255, 0.9),
+    1.8129718589em 1.7454143928em 7px rgba(0, 255, 15, 0.9),
+    1.0949978982em 1.430857711em 7px rgba(0, 194, 255, 0.9),
+    1.3225308808em 0.7115521899em 7px rgba(0, 255, 57, 0.9),
+    2.4540146966em 0.7405062176em 7px rgba(22, 0, 255, 0.9),
+    0.1225002816em 0.5464555353em 7px rgba(255, 131, 0, 0.9),
+    1.8438596194em -0.4413966488em 7px rgba(133, 0, 255, 0.9),
+    0.2111254837em 2.141141217em 7px rgba(248, 0, 255, 0.9),
+    1.5342708577em 1.9610646978em 7px rgba(27, 255, 0, 0.9),
+    0.2236259495em 1.9335071869em 7px rgba(0, 255, 164, 0.9),
+    2.1745659194em 2.0793649972em 7px rgba(73, 0, 255, 0.9),
+    1.1294594582em 0.6078039605em 7px rgba(63, 255, 0, 0.9),
+    2.377550679em 0.7115140598em 7px rgba(255, 202, 0, 0.9),
+    0.4864135048em 1.496780827em 7px rgba(0, 173, 255, 0.9),
+    -0.3145362765em 0.4261287932em 7px rgba(255, 0, 119, 0.9),
+    0.6652988499em 2.3445715279em 7px rgba(255, 8, 0, 0.9),
+    1.5735865576em 0.5101831809em 7px rgba(255, 0, 89, 0.9),
+    0.5940548103em 1.9888397942em 7px rgba(255, 125, 0, 0.9),
+    -0.1973817887em 1.8230668761em 7px rgba(255, 46, 0, 0.9),
+    0.7799621849em 1.9538789036em 7px rgba(0, 255, 33, 0.9),
+    0.4608523322em 0.5663931322em 7px rgba(154, 0, 255, 0.9),
+    -0.0942551847em -0.3362822826em 7px rgba(40, 0, 255, 0.9),
+    1.1373581464em 1.6297149276em 7px rgba(119, 255, 0, 0.9),
+    -0.2456751296em -0.2405698557em 7px rgba(63, 0, 255, 0.9),
+    1.323126872em 0.1291060826em 7px rgba(255, 202, 0, 0.9),
+    2.1371786448em 2.493403643em 7px rgba(191, 255, 0, 0.9),
+    0.5236166531em 1.8629570021em 7px rgba(0, 67, 255, 0.9),
+    2.1906142355em 2.3041685526em 7px rgba(0, 243, 255, 0.9),
+    0.6702975239em 1.1545157762em 7px rgba(255, 122, 0, 0.9),
+    0.1162785337em -0.0614044587em 7px rgba(255, 22, 0, 0.9),
+    0.5288637072em -0.2744311565em 7px rgba(251, 0, 255, 0.9),
+    0.2992677144em 1.2068430202em 7px rgba(255, 207, 0, 0.9),
+    1.9968052144em 1.6179127438em 7px rgba(228, 0, 255, 0.9),
+    0.3350282207em 1.9759397276em 7px rgba(0, 24, 255, 0.9),
+    1.6660024408em 0.4037790271em 7px rgba(255, 133, 0, 0.9),
+    0.2210444457em 2.4659526966em 7px rgba(0, 255, 154, 0.9),
+    -0.2235667031em -0.3412574087em 7px rgba(0, 255, 190, 0.9),
+    -0.0282018247em 0.649306982em 7px rgba(0, 88, 255, 0.9);
+  animation-duration: 41s;
+  animation-delay: -19s;
+}
+html::before {
+  letter-spacing: 0.5em;
+  text-shadow: 0 0 5px #000;
+  white-space: pre;
+  color: #fff;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #999;
+}
+html:first-line {
+  font-size: 300%;
+  font-style: italic;
+  letter-spacing: 0;
+  color: #fff;
+}
+@keyframes move {
+  from {
+    transform: rotate(0deg) scale(12) translateX(-20px);
+  }
+  to {
+    transform: rotate(360deg) scale(18) translateX(20px);
+  }
+}
+/* responsive */
+/* mobail devices */
+@media screen and (max-width: 768px) {
+  .sp-content h2 {
+    font-size: 3rem;
+  }
+  .sp-content h2 > span {
+    font-size: 3rem;   
+  }
+  .sp-container h2 {
+    line-height: 70px;
+  }
+}
