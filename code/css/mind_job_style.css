@@ -1,0 +1,79 @@
+body {
+  font-family: Georgia, Bangla;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: #333;
+}
+@font-face {
+    font-family: "Bangla";
+    src: url("./bangla.ttf");
+}
+header h1 {
+  font-family: Georgia, Bangla;
+  font-size: 7vw;
+  background-image: linear-gradient(-90deg, #ff0000, rgb(166,246,86), rgb(85,246,246), rgb(166, 85, 246), rgb(246,85,85));
+  background-size: 200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 2.5s linear infinite;
+  margin: 10px 0;
+}
+h2 {
+  font-family: Georgia, Bangla;
+  font-size: 7vw;
+  font-weight: normal;
+  color: #00ffe7;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+header p {
+  font-family: "Georgia", Bangla;
+  font-size: 5vw;
+  font-weight: normal;
+  color: #00ffe7;
+  margin-top: 15px;
+  line-height: 1.6;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+header {
+  background-color: black;
+  color: red;
+  padding: 20px 0;
+}
+main {
+  margin-top: 20px;
+}
+.guide, .music-player, .breathing-exercise, .optical-simulation {
+  font-family: "Georgia", Bangla;
+  font-size: 4vw;
+  font-weight: normal;
+  color: #00ffe7;
+  margin-top: 15px;
+  line-height: 1.7;
+  background-color: black;
+  border: solid 2px;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+button {
+	cursor: pointer;  
+    background: linear-gradient(45deg, #00ffe1, #a86ff0);  
+      font-weight: bold;  
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,255,225,0.3);  
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+}
+button:hover {
+  background-color: #45a049;
+}

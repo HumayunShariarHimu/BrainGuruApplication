@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.stars,
+.stars-highlights,
+.planets,
+.startails,
+.scene {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .scene {
+    transform: scale(0.8);
+  }
+}
+
+@media (max-width: 992px) {
+  .scene {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 768px) {
+  .scene {
+    transform: scale(0.5);
+  }
+
+  .audio-icon-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .info-icn {
+    width: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .scene {
+    transform: scale(0.4);
+  }
+
+  .audio-icon-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .info-icn {
+    width: 35px;
+  }
+}
+
+/* Other Styles (Customize as needed) */
+.audio-icon-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.info-icn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Animation and transitions can be added as needed */

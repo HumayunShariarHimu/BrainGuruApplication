@@ -1,0 +1,100 @@
+body {
+      background: black;
+      font-family: Georgia, Bangla;
+      margin: 0;
+      padding: 0;
+    }
+    @font-face {
+    font-family: "Bangla";
+    src: url("./bangla.ttf");
+}
+    h1 {
+      font-family: Georgia, Bangla;
+  font-size: 7vw;
+  background-image: linear-gradient(-90deg, #ff0000, rgb(166,246,86), rgb(85,246,246), rgb(166, 85, 246), rgb(246,85,85));
+  background-size: 200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 2.5s linear infinite;
+  margin: 10px 0;
+    }  
+    h2 {
+      font-size: 1em;
+      color: lime;
+      font-weight: bold;
+      text-align: center;
+      margin: 0.5em 0;
+    }
+    p {
+      font-size: 1em;
+  color: #00ffe7;
+      line-height: 1.5;
+      margin: 1em;
+    }
+header {
+    background-color: black;
+    text-align: center;
+}
+.content {
+    padding: 20px;
+    text-align: center;
+}
+form {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 225, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 255, 225, 0.2);
+}
+label {
+    display: block;
+    color: #00ffe7;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+select {
+	font-family: Georgia, Bangla;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(0, 0, 0, 0.6);
+    color: #00ffe7;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0,255,225,0.2);
+    margin-bottom: 15px;
+    appearance: none;
+}
+select:focus {
+    border: 1px solid #00ffe1;
+    box-shadow: 0 0 10px rgba(0,255,225,0.4);
+}
+button {
+	cursor: pointer;  
+    background: linear-gradient(45deg, #00ffe1, #a86ff0);  
+      font-weight: bold;  
+      color: black;
+      box-shadow: 0 4px 12px rgba(0,255,225,0.3);  
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+}
+button:hover {
+  background-color: #45a049;
+}
+#medicationResult {
+    margin-top: 20px;
+    font-size: 18px;
+}
+#medicationList {
+    margin-top: 10px;
+    text-align: left;
+}

@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Bangla";
+  src: url("./bangla.ttf");
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, Bangla;
+  background: radial-gradient(circle, #fff4c1, #ffe5b4, #ffd1dc);
+  animation: pulse 5s infinite;
+  text-align: center;
+}
+#heaven-box {
+  max-width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#message {
+  font-size: 1.7em;
+  font-family: Georgia, Bangla;
+  background-image: linear-gradient(
+    -90deg,
+    #ff0000,
+    #e6ff00,
+    #00fff7,
+    #a800ff,
+    #ff0080,
+    #ff0000
+  );
+  background-size: 300%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  margin-bottom: 25px;
+  word-break: break-word;
+}
+
+button {
+  cursor: pointer;
+  font-family: Georgia, Bangla;
+  background: linear-gradient(45deg, #00ffe1, #a86ff0);  
+  font-weight: bold;  
+  color: white;
+  box-shadow: 0 4px 12px rgba(0,255,225,0.3);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  width: 90%;
+  max-width: 250px;
+  margin: 10px auto;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@keyframes pulse {
+  0% { background: radial-gradient(circle, #fff4c1, #ffe5b4); }
+  50% { background: radial-gradient(circle, #ffe5b4, #ffd1dc); }
+  100% { background: radial-gradient(circle, #ffd1dc, #fff4c1); }
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 600px) {
+  #message {
+    font-size: 1.2em;
+    padding: 0 10px;
+  }
+
+  button {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  #heaven-box {
+    padding: 15px;
+  }
+}

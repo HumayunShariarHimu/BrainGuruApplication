@@ -1,0 +1,48 @@
+body {
+  font-family: Georgia, Bangla;
+  background-color: black;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+@font-face {
+    font-family: "Bangla";
+    src: url("./bangla.ttf");
+}
+.clock-container {
+  text-align: center;
+  background-color: black;
+  padding: 30px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+    h1 {
+      font-family: Georgia, Bangla;
+  font-size: 7vw;
+  background-image: linear-gradient(-90deg, #ff0000, rgb(166,246,86), rgb(85,246,246), rgb(166, 85, 246), rgb(246,85,85));
+  background-size: 200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 2.5s linear infinite;
+  margin: 10px 0;
+    }
+.time {
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(45deg, white, lightblue, blue, violet, purple, pink, red); 
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.activity {
+  margin-top: 20px;
+  font-family: "Georgia", Bangla;
+  font-size: 5vw;
+  font-weight: normal;
+  color: #00ffe7;
+  margin-top: 15px;
+  line-height: 1.6;
+}

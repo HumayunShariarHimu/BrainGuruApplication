@@ -1,0 +1,54 @@
+body {
+  background: black;
+      font-family: Georgia, Bangla;
+      margin: 0;
+      padding: 0;
+}
+@font-face {
+    font-family: "Bangla";
+    src: url("./bangla.ttf");
+}
+div {
+  display: block;
+}
+.tagBall {
+  width: 100%;
+  height: 100vh;
+  padding: 5px;
+  margin: 10px;
+  margin-left: -10px;
+  margin-top: 2px;
+  align-content: center;
+  position: absolute;
+  cursor: cell;
+}
+.tag {
+  display: block;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-family: Consolas;
+  text-decoration: none;
+  font-size: 5px;
+  font-weight: bold;
+}
+.tag:hover {
+  -webkit-transform: scale(1.2);
+  cursor: none;
+}
+    h1 {
+      font-family: Georgia, Bangla;
+  font-size: 6vw;
+  background-image: linear-gradient(-90deg, #ff0000, rgb(166,246,86), rgb(85,246,246), rgb(166, 85, 246), rgb(246,85,85));
+  background-size: 200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 2.5s linear infinite;
+  margin: 10px 0;
+    }
+    p {
+      font-size: 1em;
+  color: #00ffe7;
+      line-height: 1.5;
+      margin: 1em;
+    }

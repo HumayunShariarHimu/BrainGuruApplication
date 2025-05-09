@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Bangla";
+    src: url("./bangla.ttf");
+}
+.wrapper {
+  -webkit-animation: contrast 2s infinite;
+          animation: contrast 2s infinite;
+}
+img {
+  max-width: 100%
+  -webkit-animation: filter 8s infinite;
+          animation: filter 8s infinite;
+}
+@-webkit-keyframes filter {
+  from {
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+  50% {
+    filter: hue-rotate(360deg) saturate(140%);
+  }
+  to {
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+}
+@keyframes filter {
+  from {
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+  50% {
+    filter: hue-rotate(360deg) saturate(140%);
+  }
+  to {
+    filter: hue-rotate(0deg) saturate(100%);
+  }
+}
+@-webkit-keyframes contrast {
+  from {
+    filter: contrast(100%);
+  }
+  80% {
+    filter: contrast(150%);
+  }
+  to {
+    filter: contrast(100%);
+  }
+}
+@keyframes contrast {
+  from {
+    filter: contrast(100%);
+  }
+  80% {
+    filter: contrast(150%);
+  }
+  to {
+    filter: contrast(100%);
+  }
+}
+    #meditationOverlay {
+  font-family: Georgia, Bangla;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: #00ffe7;
+  font-size: 1em;
+  z-index: 9999;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid #00ffe7;
+  padding: 30px 50px;
+  width: auto;
+  height: auto;
+  text-align: center;
+}

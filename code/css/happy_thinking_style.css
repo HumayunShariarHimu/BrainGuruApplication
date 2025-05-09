@@ -1,0 +1,82 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: lime;
+}
+
+@font-face {
+    font-family: "Bangla";
+    src: url("./bangla.ttf");
+}
+
+.container {
+    height: 99vh;
+    width: 99vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 0.8em;
+    text-align: center;
+    padding-bottom: 60px; /* Bottom padding added for fixed controls space */
+}
+
+h1 {
+    font-family: Georgia, Bangla;
+    font-weight: 200;
+}
+
+.container span {
+    color: #00ffe7;
+}
+
+.container span::after {
+    content: '|';
+    animation-name: blinking;
+    animation-duration: 0.71s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blinking {
+    from {
+        color: red;
+    }
+    to {
+        color: lime;
+    }
+}
+
+.controls {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: black;
+    padding: 10px 0;
+    z-index: 1000;
+    border-top: 1px solid lime;
+}
+
+
+.controls button {
+    background: linear-gradient(45deg, #00ffe1, #a86ff0);  
+      font-weight: bold;  
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,255,225,0.3);  
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+    color: black;
+}
+
+.controls button:active {
+    background-color: red;
+    color: black;
+}

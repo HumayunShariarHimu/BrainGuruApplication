@@ -1,0 +1,105 @@
+body {
+  background: black;
+  font-family: Georgia, Bangla;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Bangla";
+  src: url("./bangla.ttf");
+}
+h1 {
+  font-family: Georgia, Bangla;
+  font-size: 7vw;
+  background-image: linear-gradient(-90deg, #ff0000, rgb(166,246,86), rgb(85,246,246), rgb(166, 85, 246), rgb(246,85,85));
+  background-size: 200%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 2.5s linear infinite;
+  margin: 10px 0;
+  text-align: center;
+}
+h2 {
+  font-size: 1.2em;
+  color: lime;
+  font-weight: bold;
+  text-align: center;
+  margin: 0.5em 0;
+}
+p {
+  font-size: 1.2em;
+  color: #00ffe7;
+  line-height: 1.5;
+  margin: 1em;
+}
+#belief-section {
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+}
+#belief-section select {
+  font-family: Georgia, Bangla;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 1.2px solid;
+  border-radius: 5px;
+  background-color: #000;
+  color: #00ffe7;
+  border-image: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet) 1;
+  width: 90%;
+  max-width: 300px;
+}
+#start-session-btn,
+#start-meditation-btn {
+  font-family: Georgia, Bangla;
+  cursor: pointer;
+  background: linear-gradient(45deg, #00ffe1, #a86ff0);
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 255, 225, 0.3);
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-top: 10px;
+  width: 90%;
+  max-width: 300px;
+}
+#start-session-btn:hover,
+#start-meditation-btn:hover {
+  background-color: #45a049;
+}
+.hidden {
+  display: none;
+}
+#meditation-section {
+  padding: 30px;
+  background-color: black;
+  text-align: center;
+  margin-top: 30px;
+}
+/* Responsive Media Queries */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 1.2em;
+    margin: 0.8em;
+  }
+  #belief-section select,
+  #start-session-btn,
+  #start-meditation-btn {
+    font-size: 1em;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  #meditation-section {
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
