@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Love Tester</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Love Tester is a psychological web application of BrainGuru that measures love and emotional compatibility based on psychology.">
+<meta name="keywords" content="BrainGuru,love tester, psychological love test, love compatibility test, mental love test, true love checker, love test online, brain based love test, emotional compatibility, relationship psychology, romantic compatibility test,Humayun Shariar Himu">
+<meta name="author" content="Humayun Shahriar Himu">
+<!-- Meta Robots -->
+<meta name="robots" content="index, follow">
+<!-- Canonical URL -->
+<link rel="canonical" href="https://humayunshariarhimu.github.io/BrainGuruApplication/love_tester.html" />
+<!-- Open Graph Meta Tags for Social Sharing -->
+<meta property="og:title" content="Love Tester Application of BrainGuru">
+<meta property="og:description" content="Love Tester is a psychological web application of BrainGuru that measures love and emotional compatibility based on psychology.">
+<meta property="og:url" content="https://humayunshariarhimu.github.io/BrainGuruApplication/love_tester.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./media/images/BrainGuruCover.png">
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Love Tester Application of BrainGuru">
+<meta name="twitter:description" content="Love Tester is a psychological web application of BrainGuru that measures love and emotional compatibility based on psychology.">
+<meta name="twitter:image" content="./media/images/BrainGuruCover.png">
+<!-- Favicon -->
+<link rel="icon" href="./media/images/BrainGuruFavicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="./media/images/BrainGuruFavicon.png" type="image/x-icon">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="./media/images/BrainGuruFavicon.png">
+<!-- Meta Image for Social Sharing -->
+<meta property="og:image" content="./media/images/BrainGuruCover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="./media/images/BrainGuruCover.png">
+
+<link rel="stylesheet" href="./code/css/love_tester_style.css">
+    </style>
+</head>
+<body>
+	<h1>Love Tester</h1>
+    <div class="container">
+        <h3>আপনার ভালোবাসার রিয়েলাইজে আপন বিবেচনা অনুযায়ী ১ হতে ১০ সংখ্যার মাঝে ইন্ডিকেশান করুন!</h3>
+        <br></br>
+        <form id="loveForm">
+            <label for="point1">আপনার ভালোবাসার মানুষটিকে বারবার দেখতে ইচ্ছা করে:-</label>
+            <input type="number" id="point1" min="0" max="10" required><br>
+
+            <label for="point2">মুখচ্ছবির ওপর মায়া লাগে:-</label>
+            <input type="number" id="point2" min="0" max="10" required><br>
+
+            <label for="point3">আপনার ভালোবাসার মানুষটির ওপর আপনি পরিপূর্ণ বিশ্বাস রাখেন:-</label>
+            <input type="number" id="point3" min="0" max="10" required><br>
+
+            <label for="point4">ভালোবাসার মানুষটি রাগ করলে আপনার মন খারাপ হয়:-</label>
+            <input type="number" id="point4" min="0" max="10" required><br>
+
+            <label for="point5">ভালোবাসার মানুষ মন খারাপ করলে আপনার কষ্ট হয়:-</label>
+            <input type="number" id="point5" min="0" max="10" required><br>
+
+            <label for="point6">ভালোবাসার মানুষ হারিয়ে যাবার এক অবচেতন ভয় মনে পূর্ণ থাকে:-</label>
+            <input type="number" id="point6" min="0" max="10" required><br>
+
+            <label for="point7">ভালোবাসার মানুষটিকে স্বপ্নে দেখেন:-</label>
+            <input type="number" id="point7" min="0" max="10" required><br>
+
+            <center><button type="button" onclick="calculateLove()">ক্যালকুলেট করুন</button></center>
+        </form>
+
+        <div id="result" class="result">
+            <p id="percentage">ভালোবাসার পরিমাণ: </p>
+        </div>
+    </div>
+
+    <script>
+        function calculateLove() {
+            // Get values from form
+            const point1 = parseInt(document.getElementById('point1').value);
+            const point2 = parseInt(document.getElementById('point2').value);
+            const point3 = parseInt(document.getElementById('point3').value);
+            const point4 = parseInt(document.getElementById('point4').value);
+            const point5 = parseInt(document.getElementById('point5').value);
+            const point6 = parseInt(document.getElementById('point6').value);
+            const point7 = parseInt(document.getElementById('point7').value);
+
+            // Calculate total points
+            const totalPoints = point1 + point2 + point3 + point4 + point5 + point6 + point7;
+            
+            // Maximum possible score
+            const maxPoints = 70; // 7 questions, each with max score of 10
+
+            // Calculate percentage
+            const lovePercentage = (totalPoints / maxPoints) * 100;
+
+            // Display result
+            document.getElementById('percentage').innerText = `ভালোবাসার পরিমাণ: ${lovePercentage.toFixed(2)}%`;
+        }
+    </script>
+</body>
+</html>

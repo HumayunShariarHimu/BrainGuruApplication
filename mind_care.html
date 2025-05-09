@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Mind Care</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mind Care - The Personalized Mental Health Medication Guide Application of BrainGuru">
+<meta name="keywords" content="BrainGuru, Mind Care,Mental Health, Medication Guide, Mental Wellness,Medication Recommendations,Anxiety Relief, Depression Treatment, Mental Health App,Mood Stabilizer, Antidepressants,Psychotropic Medications, Cognitive Health, MindCare App, Psychological Medication, Anxiety Medication, Depression Help,Mental Disorder Treatment, Medication Suggestions, Therapy and Medication,Self-Purification, Mental Health Support,Humayun Shariar Himu">
+<meta name="author" content="Humayun Shahriar Himu">
+<!-- Meta Robots -->
+<meta name="robots" content="index, follow">
+<!-- Canonical URL -->
+<link rel="canonical" href="https://humayunshariarhimu.github.io/BrainGuruApplication/mind_care.html" />
+<!-- Open Graph Meta Tags for Social Sharing -->
+<meta property="og:title" content="Mind Care Application of BrainGuru">
+<meta property="og:description" content="Mind Care - The Personalized Mental Health Medication Guide Application of BrainGuru">
+<meta property="og:url" content="https://humayunshariarhimu.github.io/BrainGuruApplication/mind_care.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./media/images/BrainGuruCover.png">
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mind Care Application of BrainGuru">
+<meta name="twitter:description" content="Mind Care - The Personalized Mental Health Medication Guide Application of BrainGuru">
+<meta name="twitter:image" content="./media/images/BrainGuruCover.png">
+<!-- Favicon -->
+<link rel="icon" href="./media/images/BrainGuruFavicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="./media/images/BrainGuruFavicon.png" type="image/x-icon">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="./media/images/BrainGuruFavicon.png">
+<!-- Meta Image for Social Sharing -->
+<meta property="og:image" content="./media/images/BrainGuruCover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="./media/images/BrainGuruCover.png">
+<link rel="stylesheet" href="./code/css/mind_care_style.css">
+</head>
+<body>
+    <header>
+        <h1>Mind Care</h1>
+        <p>The Personalized Mental Health Medication Guide</p>
+    </header>
+    <section class="content">
+        <form id="symptomForm">
+            <label for="symptom"><p>আপনার সমস্যা নির্বাচন করুন:-</p></label>
+            <select id="symptom" name="symptom">
+                <option value="Depression">বিষণ্নতা</option>
+                <option value="Anxiety">উদ্বেগ</option>
+                <option value="Schizophrenia">স্কিজোফ্রেনিয়া</option>
+                <option value="Bipolar">বাইপোলার ডিসঅর্ডার</option>
+                <option value="ADHD">এডিএইচডি</option>
+            </select>
+
+            <button type="submit">সাজেশন</button>
+        </form>
+
+        <div id="medicationResult">
+            <h2>সাজেশন দেওয়া ঔষধ</h2>
+            <p>এখানে শুধুমাত্র আপনার উপসর্গ অনুসারে সাইকোট্রপিক ঔষধ সাজেশন করা হলো মাত্র - চিকিৎসার জন্য একজন সাইকিয়াট্রিস্ট এর শরণাপন্ন হউন এবং পরামর্শ গ্রহণ করুন</p>
+            <div id="medicationList"></div>
+        </div>
+    </section>
+    <script src="./code/js/mind_care_script.js"></script>
+</body>
+</html>

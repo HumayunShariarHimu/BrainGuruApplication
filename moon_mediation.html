@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MoonMediation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experience deep focus and mental clarity through Moon Meditation by BrainGuru - A powerful meditative tool that helps you achieve mindfulness and inner peace by simply gazing at the animated moon.Unlock your calm with lunar energy.">
+  <meta name="keywords" content="BrainGuru,Moon meditation, lunar meditation, moon focus meditation, mindful moon gazing, moonlight meditation, full moon mindfulness, meditation with moon, spiritual moon healing, lunar energy focus, moon gazing therapy, meditation for concentration, calming moonlight, moon-based relaxation, cosmic meditation, BrainGuru moon meditation,Humayun Shariar Himu">
+  <meta name="author" content="Humayun Shahriar Himu">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://humayunshariarhimu.github.io/BrainGuruApplication/moon_mediation.html" />
+  <meta property="og:title" content="MoonMediation Application of BrainGuru">
+  <meta property="og:description" content="Experience deep focus and mental clarity through Moon Meditation by BrainGuru - A powerful meditative tool that helps you achieve mindfulness and inner peace by simply gazing at the animated moon.Unlock your calm with lunar energy.">
+  <meta property="og:url" content="https://humayunshariarhimu.github.io/BrainGuruApplication/moon_mediation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./media/images/BrainGuruCover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MoonMediation Application of BrainGuru">
+  <meta name="twitter:description" content="Experience deep focus and mental clarity through Moon Meditation by BrainGuru - A powerful meditative tool that helps you achieve mindfulness and inner peace by simply gazing at the animated moon.Unlock your calm with lunar energy.">
+  <meta name="twitter:image" content="./media/images/BrainGuruCover.png">
+  <link rel="icon" href="./media/images/BrainGuruFavicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./media/images/BrainGuruFavicon.png">
+  <link rel="stylesheet" href="./code/css/moon_meditation_style.css" type="text/css">
+  <link rel="stylesheet" href="./code/css/moon_meditation_effect.css" type="text/css">
+</head>
+<body>
+<!-- Meditation overlay -->
+<div id="meditationOverlay" onclick="startMeditation()">চন্দ্রের আবহে মেডিটেটিভ মানসিকতায় নিজেকে পরিপূর্ণভাবে ডেডিকেটেড করুন!</div>
+<!-- Background music (hidden) -->
+<audio id="bgMusic" src="https://github.com/HumayunShariarHimu/BrainGuruApplication/raw/refs/heads/main/media/audio/meditation_sound.mp3" loop></audio>
+<!-- Main content -->
+<div class="wrapper">
+  <div class="moon"></div>
+</div>
+
+<script>
+  function startMeditation() {
+    const overlay = document.getElementById('meditationOverlay');
+    const music = document.getElementById('bgMusic');
+    overlay.style.display = 'none';
+    music.play();
+  }
+</script>
+</body>
+</html>

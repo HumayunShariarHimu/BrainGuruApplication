@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BrainFlash</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BrainFlash - A Psychological Meditational Environment Simulation System with Binaural Beats Music & Flashing Light">
+<meta name="keywords" content="BrainGuru,Brain Flash, Binaural Beats Meditation, Flash Light Therapy, Meditative Environment AI, Brainwave Stimulation, AI Meditation Assistant, Binaural Flash System, Light and Sound Meditation, Mind Relaxation AI, AI Mental Relaxation, Psychological Meditation Tool, Brain Rhythm Control, AI for Deep Meditation, Brain Flash Therapy, AI Mental Healing Tool, Brain Frequency Meditation, Consciousness Expansion Tool, Flash Meditation Technology, AI Focus Booster, Neural Synchronization AI, Binaural Light Stimulation, Mindfulness Flash Therapy, AI-Based Brainwave Tool, Meditation Support AI, Mental Clarity Flash, Psychological Calmness Tool, Brain Frequency Control System, AI Meditation Enhancer, Flash Light Binaural Tool, Cognitive Healing Flash, Deep Focus AI, Mind-Body Sync Tool, AI Mental Reset, AI Calmness Therapy, AI Tranquility System, Neurotherapy AI, Light and Sound Therapy App, AI-Based Meditation Experience, Brain Stimulation App, AI Emotional Balancer, Brain Flash Meditation System,Humayun Shariar Himu">
+<meta name="author" content="Humayun Shahriar Himu">
+<!-- Meta Robots -->
+<meta name="robots" content="index, follow">
+<!-- Canonical URL -->
+<link rel="canonical" href="https://humayunshariarhimu.github.io/BrainGuruApplication/brain_flash.html" />
+<!-- Open Graph Meta Tags for Social Sharing -->
+<meta property="og:title" content="BrainFlash Application of BrainGuru">
+<meta property="og:description" content="BrainFlash - A Psychological Meditational Environment Simulation System with Binaural Beats Music & Flashing Light">
+<meta property="og:url" content="https://humayunshariarhimu.github.io/BrainGuruApplication/brain_flash.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./media/images/BrainGuruCover.png">
+<!-- Twitter Card Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BrainFlash Application of BrainGuru">
+<meta name="twitter:description" content="BrainFlash - A Psychological Meditational Environment Simulation System with Binaural Beats Music & Flashing Light">
+<meta name="twitter:image" content="./media/images/BrainGuruCover.png">
+<!-- Favicon -->
+<link rel="icon" href="./media/images/BrainGuruFavicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="./media/images/BrainGuruFavicon.png" type="image/x-icon">
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" sizes="180x180" href="./media/images/BrainGuruFavicon.png">
+<!-- Meta Image for Social Sharing -->
+<meta property="og:image" content="./media/images/BrainGuruCover.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="./media/images/BrainGuruCover.png">
+<link rel="stylesheet" href="./code/css/brain_flash_style.css">
+</head>
+
+<body>
+<div class="content" id="textContent">
+  <h1>BrainFlash</h1>
+  <p>পরিপূর্ণভাবে মেডিটেটিভ এনভায়রনমেন্ট পেতে এপ্লিকেশন'টি ON করে [উপযুক্ত ব্রাইটনেসে স্ক্রিন মোড সর্বদা Awakening রেখে Falsh এবং Background Music সহ একটি ছোট বদ্ধ অন্ধকার পরিবেশে মোবাইল/ডিভাইস একটু দূরে রেখে শুধুমাত্র আলো অন্ধকারে নিয়ত ভাইব উপলব্ধি'তে] যথাসম্ভব নিবিষ্টচিত্তে মনোনিবেশ করতে প্রয়াসী হউন....</p>
+</div>
+
+<div id="statusText">Long Press for ON/OFF</div>
+
+<audio id="backgroundAudio" loop>
+  <source src="https://github.com/HumayunShariarHimu/BrainGuruApplication/raw/refs/heads/main/media/audio/meditation_sound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  let flashing = false;
+  let flashInterval;
+  const audio = document.getElementById('backgroundAudio');
+  const textContent = document.getElementById('textContent');
+  const statusText = document.getElementById('statusText');
+
+  function toggleFlash() {
+    flashing = !flashing;
+
+    textContent.style.opacity = flashing ? 0 : 1;
+
+    if (flashing) {
+      let isWhite = false;
+      flashInterval = setInterval(() => {
+        document.body.style.backgroundColor = isWhite ? "black" : "white";
+        isWhite = !isWhite;
+      }, 100);
+      audio.play();
+    } else {
+      clearInterval(flashInterval);
+      document.body.style.backgroundColor = "black";
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  }
+
+  let pressTimer;
+  statusText.addEventListener("touchstart", () => {
+    pressTimer = setTimeout(toggleFlash, 600);
+  });
+
+  statusText.addEventListener("touchend", () => {
+    clearTimeout(pressTimer);
+  });
+
+  statusText.addEventListener("mousedown", () => {
+    pressTimer = setTimeout(toggleFlash, 600);
+  });
+
+  statusText.addEventListener("mouseup", () => {
+    clearTimeout(pressTimer);
+  });
+</script>
+</body>
+</html>
