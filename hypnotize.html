@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hypnotize</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Unlock better sleep, reduce anxiety and boost focus with Hypnotize by BrainGuru">
+  <meta name="keywords" content="BrainGuru,hypnosis, hypnosis for anxiety, hypnosis for focus, relaxation hypnosis, hypnotherapy app, stress relief hypnosis,Humayun Shariar Himu">
+  <meta name="author" content="Humayun Shahriar Himu">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://humayunshariarhimu.github.io/BrainGuruApplication/hypnotize.html" />
+  <meta property="og:title" content="Hypnotize Application of BrainGuru">
+  <meta property="og:description" content="Unlock better sleep, reduce anxiety, and boost focus with Hypnotize by BrainGuru">
+  <meta property="og:url" content="https://humayunshariarhimu.github.io/BrainGuruApplication/hypnotize.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./media/images/BrainGuruCover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hypnotize Application of BrainGuru">
+  <meta name="twitter:description" content="Unlock better sleep, reduce anxiety, and boost focus with Hypnotize by BrainGuru">
+  <meta name="twitter:image" content="./media/images/BrainGuruCover.png">
+  <link rel="icon" href="./media/images/BrainGuruFavicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./media/images/BrainGuruFavicon.png">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script type="x-shader/x-fragment">#version 300 es
+/*********
+* made by Matthias Hurrle (@atzedent)
+*/   
+precision highp float;
+out vec4 O;
+uniform float time;
+uniform vec2 resolution;
+#define FC gl_FragCoord.xy
+#define R resolution
+#define T time
+#define hue(a) (.6+.6*cos(6.3*(a)+vec3(0,83,21)))
+float rnd(float a) {
+	vec2 p=fract(a*vec2(12.9898,78.233));	p+=dot(p,p*345.);
+	return fract(p.x*p.y);
+}
+vec3 pattern(vec2 uv) {
+	vec3 col=vec3(0);
+	for (float i=.0; i++<20.;) {
+		float a=rnd(i);
+		vec2 n=vec2(a,fract(a*34.56)), p=sin(n*(T+7.)+T*.5);
+		float d=dot(uv-p,uv-p);
+		col+=.00125/d*hue(dot(uv,uv)+i*.125+T);
+	}
+	return col;
+}
+void main(void) {
+	vec2 uv=(FC-.5*R)/min(R.x,R.y);
+	vec3 col=vec3(0);
+	float s=2.4,
+	a=atan(uv.x,uv.y),
+	b=length(uv);
+	uv=vec2(a*5./6.28318,.05/tan(b)+T);
+	uv=fract(uv)-.5;
+	col+=pattern(uv*s);
+	O=vec4(col,1);
+}</script>
+<!-- partial -->
+  <script  src="./code/js/hypnotize_script.js"></script>
+</body>
+</html>
